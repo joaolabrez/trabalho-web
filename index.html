@@ -1,35 +1,152 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Início - Meu Portfólio</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link para o arquivo de estilo CSS -->
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meu Portfólio | Desenvolvedor</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <header>
+      <div class="container">
         <nav>
-            <ul>
-                <!-- Links de navegação para as diferentes páginas do site -->
-                <li><a href="index.html">Início</a></li>
-                <li><a href="sobre.html">Sobre Mim</a></li>
-                <li><a href="formacao.html">Formação</a></li>
-                <li><a href="portfolio.html">Portfólio</a></li>
-                <li><a href="contato.html">Contato</a></li>
-            </ul>
+          <div class="logo">JoãoLabres.dev</div>
+          <ul class="nav-links">
+            <li><a href="#home">Início</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#skills">Habilidades</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
         </nav>
+      </div>
     </header>
-    <main>
-        <h1>Bem-vindos ao meu portfólio</h1>
-        <p>Meu nome é João Labres, possível desenvolvedor em formação. Aqui você encontrará informações sobre minha trajetória, formação acadêmica, projetos e como entrar em contato comigo.</p> <!-- Texto da página inicial -->
-    </main>
-    <footer>
-        <p>&copy; 2025 </p> <!-- Informações de copyright -->
-    </footer>
-</body>
+
+    <section id="home">
+      <div class="container">
+        <div class="hero-content">
+          <h1>Olá, eu sou <span>João Labres</span></h1>
+          <h2>Desenvolvedor Full Stack</h2>
+          <p class="hero-description">
+            Seja bem-vindo ao meu portfólio. Aqui você encontra alguns dos meus
+            principais projetos e as tecnologias que utilizo no meu dia a dia.
+          </p>
+          <a href="#projetos" class="btn">Ver Projetos</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="projetos">
+      <div class="container">
+        <h2 class="section-title">Meus Projetos</h2>
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-info">
+              <h3>Snake Game</h3>
+              <p>
+                Um jogo clássico da cobrinha implementado com Python utilizando
+                a biblioteca Pygame.
+              </p>
+              <div class="tags">
+                <span>Python</span>
+                <span>Pygame</span>
+              </div>
+              <a
+                href="https://github.com/joaolabrez/SnakeGame"
+                target="_blank"
+                class="btn-project"
+                >Visualizar</a
+              >
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-info">
+              <h3>Raizes do Nordeste</h3>
+              <p>
+                Um sistema desenvolvido para uma franquia de restaurantes em
+                expansão no Brasil.
+              </p>
+              <div class="tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>Bootstrap</span>
+              </div>
+              <a href="https://joaolabrez.github.io/Raizes-do-Nordeste/" target="_blank" class="btn-project">Visualizar</a>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-info">
+              <h3>SafeGuard</h3>
+              <p>
+                Uma Landing Page desenvolvida para uma empresa focada em
+                treinamento em Segurança no Trabalho.
+              </p>
+              <div class="tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </div>
+              <a href="https://safeguardbrasil.com" target="_blank" class="btn-project">Visualizar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="container">
+        <h2 class="section-title">Habilidades</h2>
+        <div class="skills-container">
+          <div class="skill-badge">HTML5 / CSS3</div>
+          <div class="skill-badge">PHP</div>
+          <div class="skill-badge">JavaScript</div>
+          <div class="skill-badge">SQL e MySQL</div>
+          <div class="skill-badge">Git & GitHub</div>
+          <div class="skill-badge">Python</div>
+          <div class="skill-badge">Java</div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="contato">
+    <div class="container footer-grid">
+        
+        <div class="footer-brand">
+            <div class="logo">JoãoLabres.dev</div>
+            <p class="footer-bio">Desenvolvedor focado em criar experiências digitais eficientes, modernas e de alto desempenho.</p>
+            <div class="status-badge">
+                <span class="status-dot"></span>
+                <span>Disponível para novos projetos</span>
+            </div>
+        </div>
+
+        <div class="footer-nav">
+            <h4>Navegação</h4>
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-social">
+            <h4>Contato</h4>
+            <div class="contact-links">
+                <a href="https://www.linkedin.com/in/joão-labres-76004a222/" target="_blank">LinkedIn</a>
+                <a href="https://github.com/joaolabrez" target="_blank">GitHub</a>
+                <a href="mailto:joaolabresdm@gmail.com">E-mail</a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p class="copyright">&copy; <span id="year"></span> João Labres. Todos os direitos reservados.</p>
+    </div>
+</footer>
+
+    <script src="script.js"></script>
+  </body>
 </html>
-
-
-
-
-
